@@ -1,0 +1,56 @@
+{
+  "name": "react-native-mini-modal",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Mazzarolo Matteo",
+  "license": "MIT",
+  "homepage": "https://github.com/mmazzarolo/react-native-mini-modal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmazzarolo/react-native-mini-modal"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "modal"
+  ],
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "test": "echo \"No tests yet! \"",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.65.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/react": "^17.0.19",
+    "@types/react-native": "^0.64.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react-app": "^6.2.2",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.7",
+    "typescript": "^4.4.2"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ]
+  }
+}
